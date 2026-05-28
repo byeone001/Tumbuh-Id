@@ -52,7 +52,7 @@ export const MobileShell = ({
   const handleLogout = () => {
     setShowProfileMenu(false);
     // TODO: Clear auth state
-    navigate("/login");
+    navigate("/");
   };
 
   return (

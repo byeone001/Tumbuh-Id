@@ -45,7 +45,7 @@ export const ProfilePage = () => {
 
   const handleLogout = () => {
     // TODO: Clear auth state
-    navigate("/login");
+    navigate("/");
   };
 
   const handleDeleteAccount = () => {
