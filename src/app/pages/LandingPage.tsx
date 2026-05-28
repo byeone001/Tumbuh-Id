@@ -36,14 +36,6 @@ const PILLARS = [
     soft: "bg-sky-50",
     iconColor: "text-sky-600",
   },
-  {
-    title: "Literasi Digital",
-    desc: "Anti-hoaks, keamanan digital, komunikasi asertif.",
-    icon: Globe2,
-    accent: "from-violet-400 to-purple-600",
-    soft: "bg-violet-50",
-    iconColor: "text-violet-600",
-  },
 ];
 
 const TESTIMONIALS = [
