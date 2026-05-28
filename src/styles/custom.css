@@ -1,0 +1,82 @@
+:root {
+  --tumbuh-primary: #00D260;
+  --tumbuh-secondary: #20B25D;
+  --tumbuh-accent: #FFC107;
+  --tumbuh-bg: #F7FBF9;
+  --tumbuh-surface: #FFFFFF;
+  --tumbuh-text-primary: #1A2B22;
+  --tumbuh-text-secondary: #5F7367;
+  --tumbuh-shadow: 0px 4px 20px rgba(0,0,0,0.06);
+}
+
+body {
+  background-color: var(--tumbuh-bg);
+  color: var(--tumbuh-text-primary);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading, .font-serif {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.shadow-card, .shadow-tumbuh {
+  box-shadow: var(--tumbuh-shadow);
+}
+
+/* tumbuh-* utilities */
+.bg-tumbuh-primary { background-color: var(--tumbuh-primary); }
+.bg-tumbuh-secondary { background-color: var(--tumbuh-secondary); }
+.bg-tumbuh-accent { background-color: var(--tumbuh-accent); }
+.bg-tumbuh-bg { background-color: var(--tumbuh-bg); }
+.bg-tumbuh-surface { background-color: var(--tumbuh-surface); }
+.text-tumbuh-primary { color: var(--tumbuh-primary); }
+.text-tumbuh-secondary { color: var(--tumbuh-secondary); }
+.text-tumbuh-accent { color: var(--tumbuh-accent); }
+.text-tumbuh-text-primary { color: var(--tumbuh-text-primary); }
+.text-tumbuh-text-secondary { color: var(--tumbuh-text-secondary); }
+.text-tumbuh-text { color: var(--tumbuh-text-primary); }
+.text-tumbuh-muted { color: var(--tumbuh-text-secondary); }
+.border-tumbuh-primary { border-color: var(--tumbuh-primary); }
+
+/* brand-* alias utilities (used by existing components) */
+.bg-brand-primary { background-color: var(--tumbuh-primary); }
+.bg-brand-secondary { background-color: var(--tumbuh-secondary); }
+.bg-brand-accent { background-color: var(--tumbuh-accent); }
+.bg-brand-bg { background-color: var(--tumbuh-bg); }
+.bg-brand-surface { background-color: var(--tumbuh-surface); }
+.text-brand-primary { color: var(--tumbuh-primary); }
+.text-brand-secondary { color: var(--tumbuh-secondary); }
+.text-brand-accent { color: var(--tumbuh-accent); }
+.text-brand-text { color: var(--tumbuh-text-primary); }
+.text-brand-muted { color: var(--tumbuh-text-secondary); }
+.border-brand-primary { border-color: var(--tumbuh-primary); }
+
+.btn-pill, .rounded-pill { border-radius: 9999px; }
+.rounded-tumbuh { border-radius: 20px; }
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Mobile app scrollbar */
+::-webkit-scrollbar { width: 0px; }
+* { scrollbar-width: none; }
+
+/* Ensure full height works inside phone frame */
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+/* React Router outlet fills phone frame */
+[data-reactroot], .router-outlet { height: 100%; display: flex; flex-direction: column; }
+
+/* iOS safe area padding support */
+.pb-safe { padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
+
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
